@@ -35,6 +35,15 @@ def build(vid):
         if words and w["w"].strip().startswith("-"):
             words[-1] = dict(words[-1], w=words[-1]["w"].rstrip() + w["w"].strip(), e=w["e"]); continue
         words.append(dict(w))
+    # Pembetulan ikut masa (WORD_FIX = {masa_mula: "ganti" | None untuk buang})
+    wf = getattr(C, "WORD_FIX", {})
+    if wf:
+        out = []
+        for w in words:
+            k = next((k for k in wf if abs(k - w["s"]) < 0.02), None)
+            if k is None: out.append(w)
+            elif wf[k] is not None: out.append(dict(w, w=" " + wf[k]))
+        words = out
 
     # ---- segmen
     segs, cur = [], C.MAIN[0]
