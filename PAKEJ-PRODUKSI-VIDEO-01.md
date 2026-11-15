@@ -184,10 +184,15 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
 | **Pill ✓ bercahaya** | "✓ URUS EMOSI SEBELUM KAHWIN" dan "✓ EMOSI TERURUS, KEPUTUSAN PUN BAIK" | Ganti lower third seketika, dengan glow berdenyut |
 
 ### Lower Third Promosi (sepanjang video, ±3.8 s → ±88.5 s)
-- **Mockup buku 3D bergerak:** cover sebenar dengan spine, berputar masuk, berayun lembut, gold light sweep setiap 6 s, dan "attention flip" setiap 12 s untuk menarik mata tanpa mengganggu.
-- **Teks:** PERKONGSIAN DARIPADA PENULIS · **Waleed Amir & Wardah Kasih**
-- **CTA bergilir setiap 5 s:** "📖 Dapatkan buku **NAK KAHWIN TAPI ..**" ↔ "🛒 Kini di **TikTok Shop · Nuktah Books**", dengan butang emas **DAPATKAN** yang berdenyut.
-- **Kedudukan:** y 1550–1720, x 40–900. Ia berada di bawah subtitle dan tidak menutup wajah. Disembunyikan semasa hook, slam "PERCAYALAH." dan babak Book CTA (S6), kerana babak itu sudah memaparkan buku.
+Semua elemen berada **di dalam satu kotak** (900×168 px pada x 40, y 1560, sudut 26 px, kaca gelap dengan bingkai emas), disusun dalam grid tiga lajur yang sejajar di tengah secara menegak:
+
+| Lajur | Kandungan | Animasi |
+|---|---|---|
+| Kiri (96 px) | **Mockup buku 3D** (cover sebenar + spine) | Putar masuk, ayun lembut, gold light sweep setiap 6 s, "flip" perhatian setiap 12 s |
+| Tengah (fleksibel) | PERKONGSIAN DARIPADA PENULIS / **Waleed Amir & Wardah Kasih** / CTA bergilir | Baris 3 bertukar setiap 5 s: "📖 Dapatkan buku **NAK KAHWIN TAPI ..**" ↔ "Ilmu hari ini, **bahagia selamanya**" |
+| Kanan (196 px) | **Ikon TikTok Shop** + label, butang emas **DAPATKAN** | **Animasi klik** setiap 8 s: jari masuk → tekan butang (butang mengecil + glow) → riak cahaya → jari keluar (diklip dalam kotak) |
+
+Lower third disembunyikan semasa hook, slam "PERCAYALAH." dan babak Book CTA, dan diganti seketika oleh pill ✓.
 
 ## 12. SIGNATURE OUTRO (S7)
 

@@ -79,28 +79,39 @@
            background:rgba(16,16,18,.88); border:3px solid #e2c27f;
            box-shadow:0 0 0 1px rgba(242,207,134,.25), 0 0 34px rgba(242,207,134,.55), inset 0 0 18px rgba(242,207,134,.15); }
 
-  /* ---------- Lower third: mockup buku + penulis + CTA ---------- */
-  #lt { position:absolute; left:40px; top:1572px; width:860px; height:150px; opacity:0; }
-  #lt .panel { position:absolute; left:58px; top:22px; right:0; height:116px; border-radius:20px;
-     background:linear-gradient(100deg, rgba(18,18,20,.88), rgba(30,27,23,.80));
-     border:1.5px solid rgba(233,211,161,.55); box-shadow:0 18px 40px rgba(0,0,0,.5); overflow:hidden; }
-  #lt .panel .sw { position:absolute; inset:0; background:linear-gradient(100deg, transparent 40%, rgba(255,230,170,.18) 50%, transparent 60%); }
-  #lt .bk { position:absolute; left:0; top:-22px; width:124px; height:172px; perspective:600px; }
+  /* ---------- Lower third: semua elemen DALAM satu kotak ----------
+     Kotak 900x168 @ (40,1560). Grid: [buku 96] | [teks fleksibel] | [TikTok Shop + butang 196] */
+  #lt { position:absolute; left:40px; top:1560px; width:900px; height:168px; opacity:0; }
+  #lt .panel { position:absolute; inset:0; border-radius:26px; overflow:hidden;
+     background:linear-gradient(100deg, rgba(16,16,18,.92), rgba(30,27,23,.86));
+     border:1.5px solid rgba(233,211,161,.6); box-shadow:0 20px 44px rgba(0,0,0,.55), inset 0 1px 0 rgba(255,255,255,.08); }
+  #lt .panel .sw { position:absolute; inset:0; background:linear-gradient(100deg, transparent 40%, rgba(255,230,170,.16) 50%, transparent 60%); }
+  #lt .row { position:absolute; inset:0; display:flex; align-items:center; padding:0 22px; gap:20px; }
+  #lt .bk { position:relative; width:96px; height:134px; flex:none; perspective:600px; }
   #lt .bk .b3 { position:absolute; inset:0; transform-style:preserve-3d; }
   #lt .bk .fr { position:absolute; inset:0; background:url('../assets/cover-buku-rata.jpg') center/cover; border-radius:2px 5px 5px 2px;
-     box-shadow:0 12px 26px rgba(0,0,0,.6), inset 3px 0 5px rgba(0,0,0,.25); overflow:hidden; }
+     box-shadow:0 10px 22px rgba(0,0,0,.6), inset 3px 0 5px rgba(0,0,0,.25); overflow:hidden; }
   #lt .bk .fr i { position:absolute; inset:-30%; background:linear-gradient(105deg, transparent 42%, rgba(255,240,200,.75) 50%, transparent 58%); mix-blend-mode:screen; }
-  #lt .bk .sp { position:absolute; left:0; top:0; width:12px; height:100%; background:linear-gradient(90deg,#d9d2c1,#f3eee2);
+  #lt .bk .sp { position:absolute; left:0; top:0; width:10px; height:100%; background:linear-gradient(90deg,#d9d2c1,#f3eee2);
      transform-origin:left; transform:rotateY(-90deg); }
-  #lt .tx { position:absolute; left:150px; top:36px; right:170px; }
-  #lt .l1 { font-family:'Poppins'; font-weight:600; font-size:21px; letter-spacing:3px; color:var(--gold); white-space:nowrap; }
-  #lt .l2 { font-family:'Cinzel'; font-weight:700; font-size:31px; color:var(--ivory); white-space:nowrap; margin-top:2px; }
-  #lt .l3 { position:relative; height:30px; margin-top:4px; }
-  #lt .l3 div { position:absolute; left:0; top:0; font-family:'Poppins'; font-weight:600; font-size:22px; color:rgba(246,239,226,.88); white-space:nowrap; }
+  #lt .div { width:2px; height:112px; flex:none; background:linear-gradient(180deg, transparent, rgba(216,182,115,.7), transparent); }
+  #lt .tx { flex:1; min-width:0; display:flex; flex-direction:column; justify-content:center; gap:6px; }
+  #lt .l1 { font-family:'Poppins'; font-weight:600; font-size:18px; letter-spacing:3px; color:var(--gold); white-space:nowrap; line-height:1; }
+  #lt .l2 { font-family:'Cinzel'; font-weight:700; font-size:27px; color:var(--ivory); white-space:nowrap; line-height:1.15; }
+  #lt .l3 { position:relative; height:28px; overflow:hidden; }
+  #lt .l3 div { position:absolute; left:0; top:0; font-family:'Poppins'; font-weight:600; font-size:20px; line-height:28px;
+     color:rgba(246,239,226,.9); white-space:nowrap; }
   #lt .l3 b { color:var(--gold); font-weight:800; }
-  #lt .btn { position:absolute; right:18px; top:58px; padding:12px 20px; border-radius:40px; font-family:'Poppins'; font-weight:800;
-     font-size:21px; letter-spacing:1px; color:var(--charcoal); background:linear-gradient(180deg,#f1dcab,#d4b06c);
-     box-shadow:0 8px 18px rgba(0,0,0,.45); }
+  #lt .act { width:196px; flex:none; display:flex; flex-direction:column; align-items:center; gap:10px; }
+  #lt .shop { display:flex; align-items:center; gap:9px; font-family:'Poppins'; font-weight:700; font-size:18px; color:var(--ivory); white-space:nowrap; }
+  #lt .shop svg { width:36px; height:36px; flex:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,.4)); }
+  #lt .btn { position:relative; width:186px; height:52px; border-radius:30px; display:flex; align-items:center; justify-content:center;
+     font-family:'Poppins'; font-weight:800; font-size:21px; letter-spacing:1px; color:var(--charcoal);
+     background:linear-gradient(180deg,#f3dfae,#d2ab62); box-shadow:0 8px 18px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.5); }
+  #lt .rip { position:absolute; left:50%; top:50%; width:60px; height:60px; margin:-30px 0 0 -30px; border-radius:50%;
+     border:3px solid rgba(255,236,190,.95); opacity:0; pointer-events:none; }
+  #lt .clip { position:absolute; inset:0; border-radius:26px; overflow:hidden; pointer-events:none; }
+  #lt .hand { position:absolute; left:0; top:0; width:74px; height:74px; opacity:0; pointer-events:none; filter:drop-shadow(0 6px 10px rgba(0,0,0,.55)); }
 
   #word { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; opacity:0;
           background:radial-gradient(ellipse at center, rgba(0,0,0,.35), rgba(0,0,0,.75)); }
@@ -141,12 +152,25 @@ if (LAYER === 'behind') {
   R.fl = flows.map(f => add(`<div class="blk"><div class="kicker">${f.title}</div><div class="flow ${f.tone}">` +
       f.items.map((it, i) => (i ? '<div class="arrow">›</div>' : '') + `<div class="node ${i === f.items.length - 1 ? 'last' : ''}">${it.t}</div>`).join('') + '</div></div>'));
   R.ck = checks.map(c => add(`<div class="check">${c.text}</div>`));
-  R.lt = add(`<div id="lt">
-    <div class="panel"><div class="sw" id="ltsw"></div></div>
-    <div class="bk"><div class="b3" id="ltb"><div class="sp"></div><div class="fr"><i id="ltfs"></i></div></div></div>
-    <div class="tx"><div class="l1">PERKONGSIAN DARIPADA PENULIS</div><div class="l2">Waleed Amir &amp; Wardah Kasih</div>
-      <div class="l3"><div id="cta1">📖 Dapatkan buku <b>NAK KAHWIN TAPI ..</b></div><div id="cta2">🛒 Kini di <b>TikTok Shop · Nuktah Books</b></div></div></div>
-    <div class="btn" id="ltbtn">DAPATKAN</div></div>`);
+  const TT = `<svg viewBox="0 0 48 48"><rect x="1" y="1" width="46" height="46" rx="12" fill="#fff"/>
+      <path d="M17 17a7 7 0 0 1 14 0" fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round"/>
+      <rect x="9" y="16" width="30" height="26" rx="6" fill="#111"/>
+      <g transform="translate(15.5 19.5) scale(.62)">
+        <path d="M14 2v14.5a5.5 5.5 0 1 1-5.5-5.5" fill="none" stroke="#25F4EE" stroke-width="4.5" transform="translate(-1.4 -1.2)"/>
+        <path d="M14 2v14.5a5.5 5.5 0 1 1-5.5-5.5" fill="none" stroke="#FE2C55" stroke-width="4.5" transform="translate(1.4 1.2)"/>
+        <path d="M14 2v14.5a5.5 5.5 0 1 1-5.5-5.5M14 2c0 4 3 7 7 7" fill="none" stroke="#fff" stroke-width="4.5"/></g></svg>`;
+  const HAND = `<svg viewBox="0 0 64 64"><path d="M24 30V12a5 5 0 0 1 10 0v14l3-.6a5 5 0 0 1 5.6 3.3l.4-.1a5 5 0 0 1 6 3.6l.3-.1a5 5 0 0 1 6.3 4.8V45c0 8-6 15-15 15h-6c-5 0-9-3-11.5-7L15 42a5 5 0 0 1 8-6z"
+      fill="#fff" stroke="#1b1b1b" stroke-width="2.5" stroke-linejoin="round"/></svg>`;
+  R.lt = add(`<div id="lt"><div class="panel"><div class="sw" id="ltsw"></div></div>
+    <div class="row">
+      <div class="bk"><div class="b3" id="ltb"><div class="sp"></div><div class="fr"><i id="ltfs"></i></div></div></div>
+      <div class="div"></div>
+      <div class="tx"><div class="l1">PERKONGSIAN DARIPADA PENULIS</div><div class="l2">Waleed Amir &amp; Wardah Kasih</div>
+        <div class="l3"><div id="cta1">📖 Dapatkan buku <b>NAK KAHWIN TAPI ..</b></div><div id="cta2">Ilmu hari ini, <b>bahagia selamanya</b></div></div></div>
+      <div class="act"><div class="shop">${TT}<span>TikTok Shop</span></div>
+        <div class="btn" id="ltbtn">DAPATKAN<div class="rip" id="ltrip"></div></div></div>
+    </div>
+    <div class="clip"><div class="hand" id="lthand">${HAND}</div></div></div>`);
   R.cap = add(`<div id="cap"></div>`);
   R.word = add(`<div id="word"><div>${W.title}</div></div>`);
   R.flash = add(`<div id="flash"></div>`);
@@ -238,16 +262,26 @@ window.seek = (t) => {
   const L0 = hook.end + .6, L1 = W.start - .2;
   const lin = range(t, L0, L0 + .8, easeOut), lout = range(t, L1 - .4, L1, easeInOut);
   R.lt.style.opacity = lin * (1 - lout) * (1 - ckOn);
-  R.lt.style.transform = `translateX(${(1 - lin) * -120 + lout * -60 - ckOn * 40}px)`;
+  R.lt.style.transform = `translateY(${(1 - lin) * 60 + ckOn * 30}px)`;
   const tl = Math.max(0, t - L0), cyc = tl % 12, flip = range(cyc, 0, 1.0, easeInOut) * (tl > 1 ? 1 : 0);
-  const rotY = lerp(-80, -18, range(t, L0, L0 + 1, easeOutBack)) + Math.sin(t * 1.2) * 8 + Math.sin(flip * Math.PI) * 25;
-  $('ltb').style.transform = `rotateY(${rotY}deg) rotateX(${4 + Math.sin(t * .9) * 2}deg) translateY(${Math.sin(t * 1.5) * 3 - Math.sin(flip * Math.PI) * 8}px)`;
+  const rotY = lerp(-80, -16, range(t, L0, L0 + 1, easeOutBack)) + Math.sin(t * 1.2) * 6 + Math.sin(flip * Math.PI) * 22;
+  $('ltb').style.transform = `rotateY(${rotY}deg) rotateX(${3 + Math.sin(t * .9) * 2}deg)`;
   $('ltfs').style.transform = `translateX(${lerp(-90, 90, range(tl % 6, 0, 1.2, easeInOut))}%)`;
   $('ltsw').style.transform = `translateX(${lerp(-100, 100, range(tl % 6, .2, 1.6, easeInOut))}%)`;
   const ph = tl % 10, c2 = range(ph, 5, 5.4) * (1 - range(ph, 9.6, 10));
-  $('cta1').style.opacity = 1 - c2; $('cta1').style.transform = `translateY(${-c2 * 14}px)`;
-  $('cta2').style.opacity = c2;     $('cta2').style.transform = `translateY(${(1 - c2) * 14}px)`;
-  $('ltbtn').style.transform = `scale(${1 + .06 * Math.max(0, Math.sin(t * 3.2)) * (Math.sin(t * .8) > .3 ? 1 : 0)})`;
+  $('cta1').style.opacity = 1 - c2; $('cta1').style.transform = `translateY(${-c2 * 28}px)`;
+  $('cta2').style.opacity = c2;     $('cta2').style.transform = `translateY(${(1 - c2) * 28}px)`;
+  // animasi KLIK: tangan masuk -> tekan butang -> riak -> keluar (setiap 8s, bermula 2s selepas muncul)
+  const kc = (tl - 2) % 8, kOn = tl > 2;
+  const hin = kOn ? range(kc, 0, .6, easeOut) * (1 - range(kc, 1.9, 2.4, easeInOut)) : 0;
+  const press = kOn ? range(kc, .7, .82) * (1 - range(kc, .82, 1.05)) : 0;
+  const BX = 22 + 96 + 20 + 2 + 20, bx = 900 - 22 - 98, by = 84;              // pusat butang dalam kotak
+  $('lthand').style.opacity = hin;
+  $('lthand').style.transform = `translate(${bx - 10 + (1 - hin) * 90}px, ${by + 2 + (1 - hin) * 70}px) scale(${1 - press * .14}) rotate(${-12 + press * 4}deg)`;
+  $('ltbtn').style.transform = `scale(${1 - press * .08})`;
+  $('ltbtn').style.boxShadow = `0 8px 18px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.5), 0 0 ${press * 36}px rgba(255,220,150,${press * .9})`;
+  const rp = kOn ? range(kc, .8, 1.5, easeOut) : 0;
+  $('ltrip').style.opacity = kOn ? (1 - rp) * range(kc, .8, .85) : 0; $('ltrip').style.transform = `scale(${lerp(.4, 3.4, rp)})`;
 
   // --- PERCAYALAH.
   const wk = range(t, W.start, W.start + .35, easeOut);
