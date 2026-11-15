@@ -3,7 +3,7 @@
 
 **Rakaman sumber:** `NKT.mov` (Google Drive, 95.3 s, 1080×1920 HEVC 30fps, rakaman potret dalam kereta)
 **Aset buku:** 8 imej dalam folder *Maklumat Buku* (cover, foto buku fizikal, product sheet, isi kandungan, halaman contoh)
-**Output akhir:** `render/NKT-01-final.mp4` (9:16, 1080×1920, ±104.7 s) + `cover/cover-video-01.png` (1080×1920)
+**Output akhir:** `render/NKT-01-final.mp4` (9:16, 1080×1920, ±105.4 s, dibuka dengan cover) + `cover/cover-video-01.png` (1080×1920)
 
 ---
 
@@ -84,8 +84,11 @@ natural skin tones, no extra text, no logo --ar 9:16
 
 ## 6. STORYBOARD AKHIR (masa output)
 
+> Masa S1–S7 di bawah dikira selepas pembuka cover. Tambah **+0.6 s** untuk masa sebenar dalam fail akhir.
+
 | # | Masa | Babak | Audio penceramah (sumber) | Visual / Kamera | Motion graphics |
 |---|---|---|---|---|---|
+| S0 | 0.0–0.6 | **COVER VIDEO (pembuka)** | — (senyap) | Cover PNG penuh, zoom-in perlahan 1.00→1.03× | Frame pertama = thumbnail automatik di TikTok/Reels/Shorts; disambung dengan flash ke hook |
 | S1 | 0.0–3.2 | **VIRAL HOOK (cold open)** | "…boleh runtuhnya institusi. Institusi kekeluargaan…" (85.9–89.1) | Letterbox, punch-in 1.18→1.30×, flash | Teks hook 3 baris, blur→tajam, "RUMAH TANGGA" emas |
 | S2 | 3.2–17.6 | **REALITI KEHIDUPAN** | "Kita tidak perlu takut… asam garam… akan ada ujian" | Letterbox terbuka; jump cut selang-seli 1.04× / 1.13× | Kicker "UJIAN & CABARAN", kemudian **ASAM GARAM** (Cinzel, tracking-in) pada 11.4 s |
 | S3 | 17.6–36.5 | **NASIHAT UTAMA (i)** | "Yang kita perlu risau: kesediaan… persiapan…" | Punch-in pada setiap potongan | 2 floating glass cards: **01 KESEDIAAN KITA** (21.0 s), **02 PERSIAPAN KITA** (23.5 s) |
@@ -96,7 +99,7 @@ natural skin tones, no extra text, no logo --ar 9:16
 | S6 | 89.7–98.2 | **SOFT-SELL BOOK CTA** | *(tiada suara; muzik)* | Book reveal 3D: buku berputar −48°→−14°, light sweep emas, float | "Perkahwinan bukan sekadar menyatukan **dua hati.**" → "Dalami lagi perkongsian ini menerusi buku" → **NAK KAHWIN TAPI ..** → pill "Dapatkan naskhah anda sekarang · TikTok Shop · Nuktah Books" |
 | S7 | 98.2–104.7 | **SIGNATURE OUTRO** | — | Hitam charcoal, partikel emas | *Waleed Amir* & *Wardah Kasih* (handwriting wipe-reveal, Great Vibes), garis emas, "ILMU HARI INI, BAHAGIA SELAMANYA", gold light sweep, fade to black |
 
-**Jumlah:** ±104.7 s (dalam julat 60–120 s). Rakaman asal 95.3 s dipadatkan kepada 89.7 s dengan memendekkan 12 jeda senyap kepada ~0.2 s.
+**Jumlah:** ±105.4 s (cover 0.6 s + kandungan 104.7 s) (dalam julat 60–120 s). Rakaman asal 95.3 s dipadatkan kepada 89.7 s dengan memendekkan 12 jeda senyap kepada ~0.2 s.
 
 ## 7. PELAN MOTION GRAPHICS
 
@@ -197,7 +200,7 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
 
 | Fail | Keterangan |
 |---|---|
-| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC, 104.7 s, −14.3 LUFS, **tanpa muzik**. Dihantar terus dalam sesi dan tidak di-commit ke git (68 MB). Subtitle disahkan segerak dalam ±0.1 s dengan transkripsi semula. |
+| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC, 105.4 s (dibuka dengan cover 0.6 s), −14.3 LUFS, **tanpa muzik**. Dihantar terus dalam sesi dan tidak di-commit ke git (68 MB). Subtitle disahkan segerak dalam ±0.1 s dengan transkripsi semula. |
 | `cover/cover-video-01.png` | Cover video 1080×1920 |
 | `cover/cover-video-01.html` | Sumber cover (boleh ubah teks dan render semula) |
 | `motion/overlay.html` + `overlay-data.js` | Subtitle + motion graphics (telus) |
