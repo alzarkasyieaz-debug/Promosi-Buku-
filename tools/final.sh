@@ -3,10 +3,14 @@
 # Prasyarat: render/base.mp4 (edit/build_base.py)
 set -euo pipefail
 cd "$(dirname "$0")/.."
-[ -d render/ov ]  || node tools/render-motion.js motion/overlay.html   render/ov  30 --alpha
+# Mask penceramah untuk text-behind-subject (model: onnx-community/mediapipe_selfie_segmentation)
+[ -f render/mask.mkv ] || python3 -I tools/mask_video.py "${SEG_MODEL:?set SEG_MODEL=path/model.onnx}" render/base.mp4 render/mask.mkv
+[ -d render/ovb ] || node tools/render-motion.js 'motion/overlay.html?layer=behind' render/ovb 30 --alpha
+[ -d render/ov ]  || node tools/render-motion.js 'motion/overlay.html?layer=front'  render/ov  30 --alpha
 [ -d render/cta ] || node tools/render-motion.js motion/cta-outro.html render/cta 30
-ffmpeg -v error -y -i render/base.mp4 -framerate 30 -i render/ov/f%05d.png \
-  -filter_complex "[0:v][1:v]overlay=0:0:eof_action=pass:shortest=0,format=yuv420p[v]" \
+# Komposit: video -> kata belakang -> penceramah (mask) -> lapisan hadapan
+ffmpeg -v error -y -i render/base.mp4 -i render/mask.mkv -framerate 30 -i render/ovb/f%05d.png -framerate 30 -i render/ov/f%05d.png \
+  -filter_complex "[0:v]split[a][b];[a][2:v]overlay[bg];[b][1:v]alphamerge[p];[bg][p]overlay[x];[x][3:v]overlay,format=yuv420p[v]" \
   -map "[v]" -map 0:a -c:v libx264 -preset medium -crf 17 -c:a copy render/main.mp4
 ffmpeg -v error -y -framerate 30 -i render/cta/f%05d.png -f lavfi -i anullsrc=r=48000:cl=stereo \
   -shortest -c:v libx264 -preset medium -crf 17 -pix_fmt yuv420p -c:a aac -b:a 192k render/cta.mp4

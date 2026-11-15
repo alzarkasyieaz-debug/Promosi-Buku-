@@ -1142,60 +1142,83 @@ window.DATA = {
    ]
   },
   {
-   "kind": "title",
+   "kind": "behind",
    "start": 3.333,
    "end": 13.667,
-   "kicker": "UJIAN & CABARAN",
-   "title": "ASAM GARAM",
+   "kicker": "UJIAN & CABARAN ITU",
+   "word": "ASAM GARAM",
+   "size": 124,
    "sub": "dalam pernikahan",
-   "title_at": 11.356599999999998
+   "word_at": 11.356599999999998
   },
   {
-   "kind": "cards",
+   "kind": "notif",
    "start": 18.133,
    "end": 28.567,
-   "title": "YANG PERLU KITA RISAU",
+   "tone": "gold",
+   "app": "YANG PERLU KITA RISAU",
    "items": [
     {
-     "n": "01",
-     "t": "KESEDIAAN KITA",
-     "at": 21.023300000000003
+     "label": "PERSEDIAAN · 01",
+     "t": "Bagaimana kesediaan kita",
+     "at": 21.023300000000003,
+     "time": "sekarang",
+     "icon": "✓"
     },
     {
-     "n": "02",
-     "t": "PERSIAPAN KITA",
-     "at": 23.5367
+     "label": "PERSEDIAAN · 02",
+     "t": "Bagaimana persiapan kita",
+     "at": 23.5367,
+     "time": "sekarang",
+     "icon": "✓"
     }
    ]
   },
   {
-   "kind": "list",
+   "kind": "notif",
    "start": 36.567,
    "end": 46.7,
-   "title": "AGAR KITA TIDAK",
+   "tone": "red",
+   "app": "AGAR KITA TIDAK",
    "items": [
     {
+     "label": "ELAK · 01",
      "t": "Melatah",
-     "at": 37.8167
+     "at": 37.8167,
+     "time": "!",
+     "icon": "✕"
     },
     {
+     "label": "ELAK · 02",
      "t": "Buat keputusan terburu-buru",
-     "at": 40.01
+     "at": 40.01,
+     "time": "!",
+     "icon": "✕"
     },
     {
+     "label": "ELAK · 03",
      "t": "Merugikan pasangan & diri sendiri",
-     "at": 42.65
+     "at": 42.65,
+     "time": "!",
+     "icon": "✕"
     }
    ]
   },
   {
-   "kind": "big",
+   "kind": "behind",
    "start": 49.2,
    "end": 57.1,
-   "kicker": "PERSEDIAAN",
-   "title": "PENGURUSAN EMOSI",
+   "kicker": "PERSEDIAAN PENGURUSAN",
+   "word": "EMOSI",
+   "size": 270,
    "sub": "sebelum melangkah ke alam perkahwinan",
-   "title_at": 51.61
+   "word_at": 51.61
+  },
+  {
+   "kind": "check",
+   "start": 54.8,
+   "end": 57.3,
+   "text": "✓ URUS EMOSI SEBELUM KAHWIN"
   },
   {
    "kind": "flow",
@@ -1238,6 +1261,12 @@ window.DATA = {
      "at": 81.7234
     }
    ]
+  },
+  {
+   "kind": "check",
+   "start": 71.5,
+   "end": 73.8,
+   "text": "✓ EMOSI TERURUS, KEPUTUSAN PUN BAIK"
   },
   {
    "kind": "word",

@@ -1,5 +1,6 @@
 // Render fail HTML beranimasi (window.seek(t), window.DURATION) ke jujukan PNG.
 // Guna: node tools/render-motion.js motion/cta-outro.html out_dir [fps] [--alpha]
+//       node tools/render-motion.js 'motion/overlay.html?layer=behind' out_dir 30 --alpha
 const { chromium } = require('playwright');
 const path = require('path'); const fs = require('fs');
 (async () => {
@@ -9,7 +10,8 @@ const path = require('path'); const fs = require('fs');
   fs.mkdirSync(outDir, { recursive: true });
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
-  await p.goto('file://' + path.resolve(src));
+  const [file, query] = src.split('?');
+  await p.goto('file://' + path.resolve(file) + (query ? '?' + query : ''));
   await p.evaluate(() => document.fonts.ready);
   await p.waitForTimeout(300);
   const dur = await p.evaluate(() => window.DURATION);

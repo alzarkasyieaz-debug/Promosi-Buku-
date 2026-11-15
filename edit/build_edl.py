@@ -125,17 +125,21 @@ def ev(kind, src_a, src_b, **kw):
 events = [
     dict(kind="hook", start=0.0, end=COLD_OPEN[1] - COLD_OPEN[0],
          lines=["EMOSI YANG TAK TERKAWAL", "BOLEH MERUNTUHKAN", "RUMAH TANGGA"]),
-    ev("title", 1.80, 12.9, kicker="UJIAN & CABARAN", title="ASAM GARAM", sub="dalam pernikahan",
-       title_at=to_out(10.59)),
-    ev("cards", 18.20, 28.9, title="YANG PERLU KITA RISAU", items=[
-        dict(n="01", t="KESEDIAAN KITA", at=to_out(21.09)),
-        dict(n="02", t="PERSIAPAN KITA", at=to_out(23.87))]),
-    ev("list", 36.9, 47.3, title="AGAR KITA TIDAK", items=[
-        dict(t="Melatah", at=to_out(38.15)),
-        dict(t="Buat keputusan terburu-buru", at=to_out(40.61)),
-        dict(t="Merugikan pasangan & diri sendiri", at=to_out(43.25))]),
-    ev("big", 49.8, 57.7, kicker="PERSEDIAAN", title="PENGURUSAN EMOSI", sub="sebelum melangkah ke alam perkahwinan",
-       title_at=to_out(52.21)),
+    # Kata besar DI BELAKANG penceramah (text-behind-subject, gaya rujukan "audience")
+    ev("behind", 1.80, 12.9, kicker="UJIAN & CABARAN ITU", word="ASAM GARAM", size=124,
+       sub="dalam pernikahan", word_at=to_out(10.59)),
+    # Tindanan kad notifikasi (gaya rujukan notifikasi iOS) untuk point tersusun
+    ev("notif", 18.20, 28.9, tone="gold", app="YANG PERLU KITA RISAU", items=[
+        dict(label="PERSEDIAAN · 01", t="Bagaimana kesediaan kita", at=to_out(21.09), time="sekarang", icon="✓"),
+        dict(label="PERSEDIAAN · 02", t="Bagaimana persiapan kita", at=to_out(23.87), time="sekarang", icon="✓")]),
+    ev("notif", 36.9, 47.3, tone="red", app="AGAR KITA TIDAK", items=[
+        dict(label="ELAK · 01", t="Melatah", at=to_out(38.15), time="!", icon="✕"),
+        dict(label="ELAK · 02", t="Buat keputusan terburu-buru", at=to_out(40.61), time="!", icon="✕"),
+        dict(label="ELAK · 03", t="Merugikan pasangan & diri sendiri", at=to_out(43.25), time="!", icon="✕")]),
+    ev("behind", 49.8, 57.7, kicker="PERSEDIAAN PENGURUSAN", word="EMOSI", size=270,
+       sub="sebelum melangkah ke alam perkahwinan", word_at=to_out(52.21)),
+    # Pill ✓ bercahaya (gaya rujukan) — ganti lower third seketika
+    ev("check", 55.4, 57.9, text="✓ URUS EMOSI SEBELUM KAHWIN"),
     ev("flow", 61.2, 76.0, tone="good", title="BILA EMOSI TERURUS", items=[
         dict(t="Urus emosi dengan baik", at=to_out(63.89)),
         dict(t="Keputusan yang baik", at=to_out(74.07)),
@@ -144,6 +148,7 @@ events = [
         dict(t="Gagal mengawal emosi", at=to_out(79.79)),
         dict(t="Implikasi berpanjangan", at=to_out(81.85)),
         dict(t="Runtuhnya institusi kekeluargaan", at=to_out(86.39))]),
+    ev("check", 74.1, 76.4, text="✓ EMOSI TERURUS, KEPUTUSAN PUN BAIK"),
     ev("word", 93.35, 94.35, title="PERCAYALAH."),
 ]
 

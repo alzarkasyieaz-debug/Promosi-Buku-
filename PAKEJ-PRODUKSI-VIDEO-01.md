@@ -175,6 +175,14 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
   > 📖 Dapatkan di TikTok Shop Nuktah Books.
   > #NakKahwinTapi #NasihatPerkahwinan #RumahTangga #PersediaanKahwin #NuktahBooks #abetterme #resetlifestyle
 
+### Kesan tambahan (mengikut video rujukan)
+| Kesan | Digunakan pada | Teknik |
+|---|---|---|
+| **Kata gergasi di belakang penceramah** (gaya "audience") | **ASAM GARAM** (±11 s) dan **EMOSI** (±52 s) | Mask penceramah setiap frame (`tools/mask_video.py`), dengan susunan lapisan video → kata → penceramah → grafik |
+| **Tindanan kad notifikasi** (gaya iOS) | "Yang perlu kita risau" (2 kad ✓ emas) dan "Agar kita tidak" (3 kad ✕ merah) | Kad jatuh dari atas mengikut masa perkataan, dengan lencana kiraan merah |
+| **Perkataan aktif dalam pill** | Semua subtitle | Pill emas di belakang perkataan yang sedang disebut |
+| **Pill ✓ bercahaya** | "✓ URUS EMOSI SEBELUM KAHWIN" dan "✓ EMOSI TERURUS, KEPUTUSAN PUN BAIK" | Ganti lower third seketika, dengan glow berdenyut |
+
 ### Lower Third Promosi (sepanjang video, ±3.8 s → ±88.5 s)
 - **Mockup buku 3D bergerak:** cover sebenar dengan spine, berputar masuk, berayun lembut, gold light sweep setiap 6 s, dan "attention flip" setiap 12 s untuk menarik mata tanpa mengganggu.
 - **Teks:** PERKONGSIAN DARIPADA PENULIS · **Waleed Amir & Wardah Kasih**
