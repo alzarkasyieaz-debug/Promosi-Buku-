@@ -190,8 +190,21 @@ function pop(el, at, t, dur = .45) {
   el.style.transform = `translateY(${(1 - k) * 40}px) scale(${lerp(.85, 1, k)})`;
 }
 
+// Auto-fit: kecilkan saiz fon teks besar yang melebihi lebar frame (sekali, selepas fon dimuat)
+let fitted = false;
+function fitAll() {
+  fitted = true;
+  document.querySelectorAll('#hook .l, .bword').forEach(el => {
+    const ls = el.style.letterSpacing; el.style.letterSpacing = '2px'; el.style.transform = 'none';
+    const max = 990, w = el.scrollWidth > el.clientWidth ? el.scrollWidth : el.getBoundingClientRect().width;
+    const range = document.createRange(); range.selectNodeContents(el); const tw = range.getBoundingClientRect().width;
+    if (tw > max) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * max / tw) + 'px';
+    el.style.letterSpacing = ls;
+  });
+}
 let lastCap = -1;
 window.seek = (t) => {
+  if (!fitted) fitAll();
   // ===================== LAPISAN BELAKANG =====================
   if (LAYER === 'behind') {
     behinds.forEach((e, i) => {

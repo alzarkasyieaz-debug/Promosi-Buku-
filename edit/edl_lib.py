@@ -30,7 +30,11 @@ def load_config(vid):
 
 def build(vid):
     C = load_config(vid)
-    words = [w for s in json.load(open(ROOT / C.TRANSCRIPT)) for w in s["words"]]
+    words = []
+    for w in (w for s in json.load(open(ROOT / C.TRANSCRIPT)) for w in s["words"]):
+        if words and w["w"].strip().startswith("-"):
+            words[-1] = dict(words[-1], w=words[-1]["w"].rstrip() + w["w"].strip(), e=w["e"]); continue
+        words.append(dict(w))
 
     # ---- segmen
     segs, cur = [], C.MAIN[0]
@@ -83,7 +87,8 @@ def build(vid):
         for c in caps:
             for x in c["words"]:
                 for a, b in getattr(C, "FIX", {}).items():
-                    x["w"] = x["w"].replace(a, b)
+                    if re.sub(r"[^\w-]", "", x["w"]) == a:
+                        x["w"] = x["w"].replace(a, b)
         for i, c in enumerate(caps):
             nxt = caps[i + 1]["start"] if i + 1 < len(caps) else c["end"] + 0.6
             c["end"] = round(min(max(c["end"] + 0.15, c["start"] + 0.7), nxt), 3)
