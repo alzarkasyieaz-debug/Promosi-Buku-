@@ -197,7 +197,7 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
 
 | Fail | Keterangan |
 |---|---|
-| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC (tanpa muzik). **Tidak di-commit ke git (saiz besar) dan dimuat naik ke Google Drive.** |
+| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC, 104.7 s, −14.3 LUFS, **tanpa muzik**. Dihantar terus dalam sesi dan tidak di-commit ke git (68 MB). Subtitle disahkan segerak dalam ±0.1 s dengan transkripsi semula. |
 | `cover/cover-video-01.png` | Cover video 1080×1920 |
 | `cover/cover-video-01.html` | Sumber cover (boleh ubah teks dan render semula) |
 | `motion/overlay.html` + `overlay-data.js` | Subtitle + motion graphics (telus) |
