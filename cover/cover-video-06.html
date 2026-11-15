@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<title>Cover Video 06 — Pasangan Itu Hadiah</title>
+<link rel="stylesheet" href="../motion/brand.css">
+<style>
+  html, body { background: var(--charcoal); }
+  .stage { background: #121212; }
+  /* Latar: frame asal dikaburkan (depth) + glow emas di belakang kepala */
+  .bg { position:absolute; inset:-60px; background:url('../assets/frame-penceramah-06.jpg') center 30%/cover;
+        filter: blur(30px) brightness(.28) saturate(.6) sepia(.35); }
+  .glow { position:absolute; inset:0;
+    background: radial-gradient(ellipse 55% 30% at 50% 36%, rgba(216,182,115,.42), transparent 70%),
+                radial-gradient(ellipse 90% 50% at 50% 100%, rgba(0,0,0,.85), transparent 70%); }
+
+  /* HEADLINE (kelompok 1) — "PASTI." berada DI BELAKANG subjek */
+  .k1 { position:absolute; left:0; right:0; top:205px; text-align:center; font-family:'Cinzel'; font-weight:700;
+        font-size:80px; letter-spacing:8px; color:var(--ivory); text-shadow:0 6px 26px rgba(0,0,0,.8); }
+  .big { position:absolute; left:0; right:0; top:300px; text-align:center; font-family:'Cinzel'; font-weight:900;
+         font-size:220px; letter-spacing:2px; line-height:1; color:#f2cf86;
+         text-shadow:0 3px 0 #9c7434, 0 6px 0 #7d5c29, 0 18px 50px rgba(0,0,0,.8), 0 0 80px rgba(242,207,134,.3); }
+
+  /* Subjek (hero) */
+  .hero { position:absolute; left:104px; top:60px; width:872px; height:1550px;
+          background:url('../assets/penceramah-cutout-06.png') 0 0/100% 100% no-repeat;
+          filter: contrast(1.07) saturate(.9) sepia(.08) brightness(1.02)
+                  drop-shadow(0 0 2px rgba(255,226,170,.6)) drop-shadow(0 0 30px rgba(216,182,115,.25));
+          -webkit-mask-image: radial-gradient(ellipse 50% 52% at 50% 40%, #000 75%, transparent 100%);
+                  mask-image: radial-gradient(ellipse 50% 52% at 50% 40%, #000 75%, transparent 100%); }
+  .rim { position:absolute; inset:0; pointer-events:none;
+         background: radial-gradient(ellipse 40% 25% at 70% 40%, rgba(255,214,150,.14), transparent 70%); mix-blend-mode:screen; }
+
+  /* SUBHEADLINE (kelompok 2) */
+  .sub { position:absolute; left:50%; top:1500px; transform:translateX(-50%); width:900px; text-align:center;
+         font-family:'Poppins'; font-weight:700; font-size:50px; line-height:1.2; color:var(--ivory);
+         text-shadow:0 4px 20px rgba(0,0,0,.95); }
+  .sub b { color:var(--charcoal); background:linear-gradient(180deg,#f1dcab,#d4b06c); padding:2px 18px; border-radius:12px;
+           font-weight:800; text-shadow:none; }
+  .brand { position:absolute; left:0; right:0; bottom:110px; text-align:center; font-family:'Poppins'; font-weight:600;
+           font-size:24px; letter-spacing:3px; color:rgba(246,239,226,.7); }
+  .brand .t { font-family:'Cinzel'; font-weight:700; color:var(--gold-soft); letter-spacing:5px; font-size:26px; }
+  .line { position:absolute; left:50%; top:1450px; width:300px; height:2px; margin-left:-150px;
+          background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="bg"></div><div class="glow"></div>
+  <div class="k1">PASANGAN ITU</div>
+  <div class="big">HADIAH</div>
+  <div class="hero"></div>
+  <div class="rim"></div>
+  <div class="line"></div>
+  <div class="sub">Ada kekurangan?<br><b>Baiki bersama.</b></div>
+  <div class="brand"><span class="t">NAK KAHWIN TAPI ..</span><br>Waleed Amir &amp; Wardah Kasih</div>
+  <div class="vignette"></div><div class="grain"></div>
+</div>
+</body>
+</html>

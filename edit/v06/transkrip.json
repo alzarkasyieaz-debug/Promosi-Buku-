@@ -1,0 +1,740 @@
+[
+ {
+  "start": 0.0,
+  "end": 9.06,
+  "text": "Syukur Allah Ta'ala hadiahkan kita seorang pasangan untuk melengkapkan kelemahan dan kekhilafan kita",
+  "words": [
+   {
+    "s": 0.0,
+    "e": 2.02,
+    "w": " Syukur"
+   },
+   {
+    "s": 2.02,
+    "e": 2.3,
+    "w": " Allah"
+   },
+   {
+    "s": 2.3,
+    "e": 2.6,
+    "w": " Ta"
+   },
+   {
+    "s": 2.6,
+    "e": 2.76,
+    "w": "'ala"
+   },
+   {
+    "s": 2.76,
+    "e": 3.96,
+    "w": " hadiahkan"
+   },
+   {
+    "s": 3.96,
+    "e": 4.26,
+    "w": " kita"
+   },
+   {
+    "s": 4.26,
+    "e": 5.68,
+    "w": " seorang"
+   },
+   {
+    "s": 5.68,
+    "e": 6.22,
+    "w": " pasangan"
+   },
+   {
+    "s": 6.22,
+    "e": 6.54,
+    "w": " untuk"
+   },
+   {
+    "s": 6.54,
+    "e": 7.4,
+    "w": " melengkapkan"
+   },
+   {
+    "s": 7.4,
+    "e": 7.94,
+    "w": " kelemahan"
+   },
+   {
+    "s": 7.94,
+    "e": 8.2,
+    "w": " dan"
+   },
+   {
+    "s": 8.2,
+    "e": 8.84,
+    "w": " kekhilafan"
+   },
+   {
+    "s": 8.84,
+    "e": 9.06,
+    "w": " kita"
+   }
+  ]
+ },
+ {
+  "start": 9.06,
+  "end": 13.26,
+  "text": "Bahkan dia juga ada kelemahan dan kekurangan",
+  "words": [
+   {
+    "s": 9.06,
+    "e": 10.68,
+    "w": " Bahkan"
+   },
+   {
+    "s": 10.68,
+    "e": 11.34,
+    "w": " dia"
+   },
+   {
+    "s": 11.34,
+    "e": 11.68,
+    "w": " juga"
+   },
+   {
+    "s": 11.68,
+    "e": 12.02,
+    "w": " ada"
+   },
+   {
+    "s": 12.02,
+    "e": 12.56,
+    "w": " kelemahan"
+   },
+   {
+    "s": 12.56,
+    "e": 12.7,
+    "w": " dan"
+   },
+   {
+    "s": 12.7,
+    "e": 13.26,
+    "w": " kekurangan"
+   }
+  ]
+ },
+ {
+  "start": 13.26,
+  "end": 19.3,
+  "text": "Namun kekurangan dan kelemahan itu adalah tanggungjawab kita untuk membetulkan",
+  "words": [
+   {
+    "s": 13.26,
+    "e": 14.34,
+    "w": " Namun"
+   },
+   {
+    "s": 14.34,
+    "e": 15.14,
+    "w": " kekurangan"
+   },
+   {
+    "s": 15.14,
+    "e": 15.38,
+    "w": " dan"
+   },
+   {
+    "s": 15.38,
+    "e": 15.88,
+    "w": " kelemahan"
+   },
+   {
+    "s": 15.88,
+    "e": 16.16,
+    "w": " itu"
+   },
+   {
+    "s": 16.16,
+    "e": 16.96,
+    "w": " adalah"
+   },
+   {
+    "s": 16.96,
+    "e": 17.68,
+    "w": " tanggungjawab"
+   },
+   {
+    "s": 17.68,
+    "e": 17.88,
+    "w": " kita"
+   },
+   {
+    "s": 17.88,
+    "e": 18.26,
+    "w": " untuk"
+   },
+   {
+    "s": 18.26,
+    "e": 19.3,
+    "w": " membetulkan"
+   }
+  ]
+ },
+ {
+  "start": 19.3,
+  "end": 24.42,
+  "text": "Untuk menasihati agar tidak terus berada dalam kelemahan dan kekhilafan",
+  "words": [
+   {
+    "s": 19.3,
+    "e": 20.1,
+    "w": " Untuk"
+   },
+   {
+    "s": 20.1,
+    "e": 21.08,
+    "w": " menasihati"
+   },
+   {
+    "s": 21.08,
+    "e": 21.82,
+    "w": " agar"
+   },
+   {
+    "s": 21.82,
+    "e": 22.02,
+    "w": " tidak"
+   },
+   {
+    "s": 22.02,
+    "e": 22.3,
+    "w": " terus"
+   },
+   {
+    "s": 22.3,
+    "e": 22.74,
+    "w": " berada"
+   },
+   {
+    "s": 22.74,
+    "e": 22.98,
+    "w": " dalam"
+   },
+   {
+    "s": 22.98,
+    "e": 23.56,
+    "w": " kelemahan"
+   },
+   {
+    "s": 23.56,
+    "e": 23.72,
+    "w": " dan"
+   },
+   {
+    "s": 23.72,
+    "e": 24.42,
+    "w": " kekhilafan"
+   }
+  ]
+ },
+ {
+  "start": 24.42,
+  "end": 31.6,
+  "text": "Sebagai pasangan, ada kalanya kita menerima nasihat dan ada kalanya kita memberi nasihat",
+  "words": [
+   {
+    "s": 24.42,
+    "e": 25.32,
+    "w": " Sebagai"
+   },
+   {
+    "s": 25.32,
+    "e": 25.98,
+    "w": " pasangan,"
+   },
+   {
+    "s": 26.12,
+    "e": 26.74,
+    "w": " ada"
+   },
+   {
+    "s": 26.74,
+    "e": 27.92,
+    "w": " kalanya"
+   },
+   {
+    "s": 27.92,
+    "e": 28.5,
+    "w": " kita"
+   },
+   {
+    "s": 28.5,
+    "e": 29.28,
+    "w": " menerima"
+   },
+   {
+    "s": 29.28,
+    "e": 29.76,
+    "w": " nasihat"
+   },
+   {
+    "s": 29.76,
+    "e": 29.98,
+    "w": " dan"
+   },
+   {
+    "s": 29.98,
+    "e": 30.24,
+    "w": " ada"
+   },
+   {
+    "s": 30.24,
+    "e": 30.52,
+    "w": " kalanya"
+   },
+   {
+    "s": 30.52,
+    "e": 30.74,
+    "w": " kita"
+   },
+   {
+    "s": 30.74,
+    "e": 31.24,
+    "w": " memberi"
+   },
+   {
+    "s": 31.24,
+    "e": 31.6,
+    "w": " nasihat"
+   }
+  ]
+ },
+ {
+  "start": 31.6,
+  "end": 40.48,
+  "text": "Saling memperingati antara satu sama lain adalah proses kita mengenali pasangan kita sehingga sepanjang akhir hayat kita",
+  "words": [
+   {
+    "s": 31.6,
+    "e": 32.48,
+    "w": " Saling"
+   },
+   {
+    "s": 32.48,
+    "e": 33.3,
+    "w": " memperingati"
+   },
+   {
+    "s": 33.3,
+    "e": 33.98,
+    "w": " antara"
+   },
+   {
+    "s": 33.98,
+    "e": 34.26,
+    "w": " satu"
+   },
+   {
+    "s": 34.26,
+    "e": 34.58,
+    "w": " sama"
+   },
+   {
+    "s": 34.58,
+    "e": 34.92,
+    "w": " lain"
+   },
+   {
+    "s": 34.92,
+    "e": 35.52,
+    "w": " adalah"
+   },
+   {
+    "s": 35.52,
+    "e": 36.16,
+    "w": " proses"
+   },
+   {
+    "s": 36.16,
+    "e": 36.46,
+    "w": " kita"
+   },
+   {
+    "s": 36.46,
+    "e": 37.16,
+    "w": " mengenali"
+   },
+   {
+    "s": 37.16,
+    "e": 37.66,
+    "w": " pasangan"
+   },
+   {
+    "s": 37.66,
+    "e": 37.92,
+    "w": " kita"
+   },
+   {
+    "s": 37.92,
+    "e": 38.76,
+    "w": " sehingga"
+   },
+   {
+    "s": 38.76,
+    "e": 39.38,
+    "w": " sepanjang"
+   },
+   {
+    "s": 39.38,
+    "e": 39.7,
+    "w": " akhir"
+   },
+   {
+    "s": 39.7,
+    "e": 40.14,
+    "w": " hayat"
+   },
+   {
+    "s": 40.14,
+    "e": 40.48,
+    "w": " kita"
+   }
+  ]
+ },
+ {
+  "start": 40.48,
+  "end": 46.7,
+  "text": "Kerana Allah Ta'ala berikan dia kepada kita bukan sekadar untuk melengkapkan kehidupan",
+  "words": [
+   {
+    "s": 40.48,
+    "e": 41.28,
+    "w": " Kerana"
+   },
+   {
+    "s": 41.28,
+    "e": 41.54,
+    "w": " Allah"
+   },
+   {
+    "s": 41.54,
+    "e": 41.8,
+    "w": " Ta"
+   },
+   {
+    "s": 41.8,
+    "e": 41.94,
+    "w": "'ala"
+   },
+   {
+    "s": 41.94,
+    "e": 42.42,
+    "w": " berikan"
+   },
+   {
+    "s": 42.42,
+    "e": 43.14,
+    "w": " dia"
+   },
+   {
+    "s": 43.14,
+    "e": 43.5,
+    "w": " kepada"
+   },
+   {
+    "s": 43.5,
+    "e": 43.94,
+    "w": " kita"
+   },
+   {
+    "s": 43.94,
+    "e": 44.62,
+    "w": " bukan"
+   },
+   {
+    "s": 44.62,
+    "e": 45.06,
+    "w": " sekadar"
+   },
+   {
+    "s": 45.06,
+    "e": 45.26,
+    "w": " untuk"
+   },
+   {
+    "s": 45.26,
+    "e": 46.0,
+    "w": " melengkapkan"
+   },
+   {
+    "s": 46.0,
+    "e": 46.7,
+    "w": " kehidupan"
+   }
+  ]
+ },
+ {
+  "start": 46.7,
+  "end": 52.6,
+  "text": "Bahkan untuk membawa kita ke arah jalan yang lebih diberkati oleh Allah SWT",
+  "words": [
+   {
+    "s": 46.7,
+    "e": 47.54,
+    "w": " Bahkan"
+   },
+   {
+    "s": 47.54,
+    "e": 47.72,
+    "w": " untuk"
+   },
+   {
+    "s": 47.72,
+    "e": 48.2,
+    "w": " membawa"
+   },
+   {
+    "s": 48.2,
+    "e": 48.56,
+    "w": " kita"
+   },
+   {
+    "s": 48.56,
+    "e": 49.24,
+    "w": " ke"
+   },
+   {
+    "s": 49.24,
+    "e": 49.52,
+    "w": " arah"
+   },
+   {
+    "s": 49.52,
+    "e": 49.84,
+    "w": " jalan"
+   },
+   {
+    "s": 49.84,
+    "e": 50.0,
+    "w": " yang"
+   },
+   {
+    "s": 50.0,
+    "e": 50.26,
+    "w": " lebih"
+   },
+   {
+    "s": 50.26,
+    "e": 51.22,
+    "w": " diberkati"
+   },
+   {
+    "s": 51.22,
+    "e": 51.44,
+    "w": " oleh"
+   },
+   {
+    "s": 51.44,
+    "e": 51.74,
+    "w": " Allah"
+   },
+   {
+    "s": 51.74,
+    "e": 52.6,
+    "w": " SWT"
+   }
+  ]
+ },
+ {
+  "start": 52.6,
+  "end": 54.18,
+  "text": "Ada-ada kekurangan?",
+  "words": [
+   {
+    "s": 52.6,
+    "e": 53.38,
+    "w": " Ada"
+   },
+   {
+    "s": 53.38,
+    "e": 53.54,
+    "w": "-ada"
+   },
+   {
+    "s": 53.54,
+    "e": 54.18,
+    "w": " kekurangan?"
+   }
+  ]
+ },
+ {
+  "start": 54.42,
+  "end": 55.64,
+  "text": "Baiki bersama?",
+  "words": [
+   {
+    "s": 54.42,
+    "e": 54.98,
+    "w": " Baiki"
+   },
+   {
+    "s": 54.98,
+    "e": 55.64,
+    "w": " bersama?"
+   }
+  ]
+ },
+ {
+  "start": 55.64,
+  "end": 57.28,
+  "text": "Ada-ada kelebihan?",
+  "words": [
+   {
+    "s": 55.64,
+    "e": 56.14,
+    "w": " Ada"
+   },
+   {
+    "s": 56.14,
+    "e": 56.44,
+    "w": "-ada"
+   },
+   {
+    "s": 56.44,
+    "e": 57.28,
+    "w": " kelebihan?"
+   }
+  ]
+ },
+ {
+  "start": 57.3,
+  "end": 58.52,
+  "text": "Rasai bersama?",
+  "words": [
+   {
+    "s": 57.3,
+    "e": 57.96,
+    "w": " Rasai"
+   },
+   {
+    "s": 57.96,
+    "e": 58.52,
+    "w": " bersama?"
+   }
+  ]
+ },
+ {
+  "start": 58.6,
+  "end": 67.92,
+  "text": "InsyaAllah kita mampu mencipta bahagia dengan pasangan kiriman Tuhan yang Allah Ta'ala takdirkan bersama kita hingga akhir hayat kita",
+  "words": [
+   {
+    "s": 58.6,
+    "e": 59.38,
+    "w": " InsyaAllah"
+   },
+   {
+    "s": 59.38,
+    "e": 59.94,
+    "w": " kita"
+   },
+   {
+    "s": 59.94,
+    "e": 60.5,
+    "w": " mampu"
+   },
+   {
+    "s": 60.5,
+    "e": 60.94,
+    "w": " mencipta"
+   },
+   {
+    "s": 60.94,
+    "e": 61.56,
+    "w": " bahagia"
+   },
+   {
+    "s": 61.56,
+    "e": 61.76,
+    "w": " dengan"
+   },
+   {
+    "s": 61.76,
+    "e": 62.28,
+    "w": " pasangan"
+   },
+   {
+    "s": 62.28,
+    "e": 62.74,
+    "w": " kiriman"
+   },
+   {
+    "s": 62.74,
+    "e": 63.06,
+    "w": " Tuhan"
+   },
+   {
+    "s": 63.06,
+    "e": 63.56,
+    "w": " yang"
+   },
+   {
+    "s": 63.56,
+    "e": 63.92,
+    "w": " Allah"
+   },
+   {
+    "s": 63.92,
+    "e": 64.16,
+    "w": " Ta"
+   },
+   {
+    "s": 64.16,
+    "e": 64.28,
+    "w": "'ala"
+   },
+   {
+    "s": 64.28,
+    "e": 64.98,
+    "w": " takdirkan"
+   },
+   {
+    "s": 64.98,
+    "e": 66.0,
+    "w": " bersama"
+   },
+   {
+    "s": 66.0,
+    "e": 66.18,
+    "w": " kita"
+   },
+   {
+    "s": 66.18,
+    "e": 67.1,
+    "w": " hingga"
+   },
+   {
+    "s": 67.1,
+    "e": 67.38,
+    "w": " akhir"
+   },
+   {
+    "s": 67.38,
+    "e": 67.6,
+    "w": " hayat"
+   },
+   {
+    "s": 67.6,
+    "e": 67.92,
+    "w": " kita"
+   }
+  ]
+ },
+ {
+  "start": 67.92,
+  "end": 69.1,
+  "text": "Percayalah",
+  "words": [
+   {
+    "s": 67.92,
+    "e": 69.1,
+    "w": " Percayalah"
+   }
+  ]
+ }
+]
