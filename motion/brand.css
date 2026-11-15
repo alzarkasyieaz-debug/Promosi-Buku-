@@ -1,0 +1,16 @@
+@font-face { font-family:'Cinzel'; font-weight:700; src:url('../assets/fonts/Cinzel-700.ttf'); }
+@font-face { font-family:'Cinzel'; font-weight:900; src:url('../assets/fonts/Cinzel-900.ttf'); }
+@font-face { font-family:'Poppins'; font-weight:400; src:url('../assets/fonts/Poppins-400.ttf'); }
+@font-face { font-family:'Poppins'; font-weight:600; src:url('../assets/fonts/Poppins-600.ttf'); }
+@font-face { font-family:'Poppins'; font-weight:700; src:url('../assets/fonts/Poppins-700.ttf'); }
+@font-face { font-family:'Poppins'; font-weight:800; src:url('../assets/fonts/Poppins-800.ttf'); }
+@font-face { font-family:'Great Vibes'; font-weight:400; src:url('../assets/fonts/GreatVibes-400.ttf'); }
+:root { --charcoal:#17181a; --ivory:#f6efe2; --gold:#d8b673; --gold-soft:#e9d3a1; --beige:#cdbb9c; --brown:#6b5843; --teal:#1f5d6a; --brick:#a83a3c; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { width:1080px; height:1920px; overflow:hidden; background:transparent; }
+.stage { position:relative; width:1080px; height:1920px; overflow:hidden; }
+.vignette { position:absolute; inset:0; pointer-events:none; background:radial-gradient(ellipse 85% 75% at 50% 50%, transparent 55%, rgba(0,0,0,.6) 100%); }
+.grain { position:absolute; inset:0; opacity:.10; mix-blend-mode:overlay; pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.2 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+.particles { position:absolute; inset:0; pointer-events:none; }
+.particles i { position:absolute; border-radius:50%; background:#ffe2a6; box-shadow:0 0 10px 3px rgba(255,214,140,.5); }

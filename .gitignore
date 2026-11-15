@@ -1,0 +1,4 @@
+render/
+*.mov
+*.mp4.tmp
+node_modules/

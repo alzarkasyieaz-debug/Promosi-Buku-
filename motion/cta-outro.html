@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<title>Scene 6–7 — Book CTA + Signature Outro</title>
+<link rel="stylesheet" href="brand.css">
+<style>
+  .stage { background:
+      radial-gradient(ellipse 70% 40% at 50% 45%, rgba(216,182,115,.28), transparent 70%),
+      linear-gradient(180deg, #121314, #1d1b18 50%, #121212); }
+  /* 3D book */
+  .scene3d { position:absolute; left:0; right:0; top:560px; height:900px; perspective:1600px; }
+  .book { position:absolute; left:50%; top:0; width:520px; height:721px; margin-left:-260px;
+          transform-style:preserve-3d; }
+  .book .front { position:absolute; inset:0; background:url('../assets/cover-buku-rata.jpg') center/cover;
+          border-radius:2px 8px 8px 2px; backface-visibility:hidden; overflow:hidden;
+          box-shadow: inset 6px 0 10px rgba(0,0,0,.25); }
+  .book .spine { position:absolute; left:0; top:0; width:44px; height:100%; background:linear-gradient(90deg,#e9e4d6,#f6f2e8 60%,#d8d1c0);
+          transform-origin:left; transform:rotateY(-90deg); }
+  .book .pages { position:absolute; right:0; top:4px; width:40px; height:calc(100% - 8px);
+          background:repeating-linear-gradient(90deg,#f3eee2 0 2px,#ddd6c6 2px 3px);
+          transform-origin:right; transform:rotateY(90deg); }
+  .sweep { position:absolute; inset:-20%; background:linear-gradient(105deg, transparent 40%, rgba(255,236,190,.65) 50%, transparent 60%);
+           mix-blend-mode:screen; }
+  .floor { position:absolute; left:50%; top:1300px; width:760px; height:120px; margin-left:-380px;
+           background:radial-gradient(ellipse at center, rgba(0,0,0,.65), transparent 70%); filter:blur(8px); }
+  .ln { position:absolute; left:60px; right:60px; text-align:center; }
+  .q { top:250px; font-family:'Cinzel',serif; font-weight:700; font-size:54px; line-height:1.3; color:var(--ivory); letter-spacing:1px;
+       text-shadow:0 6px 24px rgba(0,0,0,.7); }
+  .q .g { color:var(--gold); }
+  .k { top:1420px; font-family:'Poppins'; font-weight:600; font-size:36px; color:rgba(246,239,226,.85); }
+  .t { top:1475px; font-family:'Cinzel'; font-weight:900; font-size:76px; color:var(--gold); letter-spacing:4px;
+       text-shadow:0 2px 0 #9c7434, 0 10px 30px rgba(0,0,0,.8); }
+  .pill { position:absolute; left:50%; top:1610px; transform:translateX(-50%); white-space:nowrap;
+       font-family:'Poppins'; font-weight:700; font-size:36px; color:var(--charcoal);
+       background:linear-gradient(180deg,#f1dcab,#d4b06c); padding:16px 44px; border-radius:60px;
+       box-shadow:0 18px 40px rgba(0,0,0,.5); }
+  .pill small { display:block; font-size:24px; font-weight:600; color:#4a3b28; text-align:center; }
+
+  /* outro */
+  .outro { position:absolute; inset:0; background:radial-gradient(ellipse 70% 40% at 50% 50%, rgba(216,182,115,.18), transparent 70%), #111; }
+  .sig { position:absolute; left:0; right:0; text-align:center; font-family:'Great Vibes',cursive; color:var(--gold-soft);
+         font-size:150px; line-height:1; text-shadow:0 0 30px rgba(216,182,115,.35); }
+  .s1 { top:700px; } .s2 { top:1000px; }
+  .amp { position:absolute; left:0; right:0; top:880px; text-align:center; font-family:'Cinzel'; font-weight:700; font-size:60px; color:var(--ivory); }
+  .rule { position:absolute; left:50%; top:1230px; width:420px; height:2px; margin-left:-210px; background:linear-gradient(90deg,transparent,var(--gold),transparent); }
+  .tag { position:absolute; left:0; right:0; top:1270px; text-align:center; font-family:'Poppins'; font-weight:600; font-size:28px; letter-spacing:6px; color:rgba(246,239,226,.7); }
+  .gsweep { position:absolute; inset:0; background:linear-gradient(100deg, transparent 42%, rgba(255,230,170,.35) 50%, transparent 58%); mix-blend-mode:screen; }
+  .black { position:absolute; inset:0; background:#000; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <div id="cta">
+    <div class="ln q" id="q"><span>Perkahwinan bukan sekadar</span><br><span>menyatukan <span class="g">dua hati.</span></span></div>
+    <div class="floor" id="floor"></div>
+    <div class="scene3d"><div class="book" id="book">
+      <div class="spine"></div><div class="pages"></div>
+      <div class="front"><div class="sweep" id="sweep"></div></div>
+    </div></div>
+    <div class="ln k" id="k">Dalami lagi perkongsian ini menerusi buku</div>
+    <div class="ln t" id="t">NAK KAHWIN TAPI ..</div>
+    <div class="pill" id="pill">Dapatkan naskhah anda sekarang<small>TikTok Shop · Nuktah Books</small></div>
+  </div>
+
+  <div class="outro" id="outro">
+    <div class="sig s1" id="s1">Waleed Amir</div>
+    <div class="amp" id="amp">&amp;</div>
+    <div class="sig s2" id="s2">Wardah Kasih</div>
+    <div class="rule" id="rule"></div>
+    <div class="tag" id="tag">ILMU HARI INI, BAHAGIA SELAMANYA</div>
+    <div class="gsweep" id="gsweep"></div>
+  </div>
+  <div class="particles" id="particles"></div>
+  <div class="vignette"></div><div class="grain"></div>
+  <div class="black" id="black"></div>
+</div>
+<script src="anim.js"></script>
+<script>
+const DURATION = 15;
+window.DURATION = DURATION;
+const P = makeParticles(document.getElementById('particles'), 40, 7);
+window.seek = (t) => {
+  // ---- SCENE 6: Book CTA (0–8.5s)
+  const cta = $('cta'); cta.style.opacity = 1 - range(t, 8.2, 8.8);
+  const qi = range(t, 0.3, 1.6, easeOut);
+  $('q').style.opacity = qi * (1 - range(t, 7.6, 8.2)); $('q').style.transform = `translateY(${(1-qi)*30}px)`; $('q').style.filter = `blur(${(1-qi)*8}px)`;
+  const bi = range(t, 0.8, 3.2, easeInOut);
+  const rot = lerp(-48, -14, bi) + Math.sin(t*0.9)*2*bi;
+  $('book').style.transform = `translateY(${lerp(140,0,bi)}px) translateZ(${lerp(-400,0,bi)}px) rotateY(${rot}deg) rotateX(${lerp(8,3,bi)}deg) translateY(${Math.sin(t*1.4)*6}px)`;
+  $('book').style.opacity = range(t, 0.8, 1.6);
+  $('floor').style.opacity = bi;
+  $('sweep').style.transform = `translateX(${lerp(-80, 80, range(t, 2.8, 4.2, easeInOut))}%)`;
+  const ki = range(t, 3.6, 4.4, easeOut);
+  $('k').style.opacity = ki; $('k').style.transform = `translateY(${(1-ki)*20}px)`;
+  const ti = range(t, 4.2, 5.2, easeOut);
+  $('t').style.opacity = ti; $('t').style.letterSpacing = `${lerp(18, 4, ti)}px`;
+  const pi = range(t, 5.4, 6.2, easeOutBack);
+  $('pill').style.opacity = range(t, 5.4, 5.8); $('pill').style.transform = `translateX(-50%) scale(${lerp(.7,1,pi)})`;
+
+  // ---- SCENE 7: Signature outro (8.5–15s)
+  const o = range(t, 8.4, 9.0); $('outro').style.opacity = o;
+  // handwriting-style reveal: wipe left→right with soft edge
+  const w1 = range(t, 9.0, 10.8, easeInOut), w2 = range(t, 11.0, 12.8, easeInOut);
+  $('s1').style.clipPath = `inset(0 ${100 - w1*100}% 0 0)`;
+  $('s2').style.clipPath = `inset(0 ${100 - w2*100}% 0 0)`;
+  $('amp').style.opacity = range(t, 10.6, 11.2);
+  $('rule').style.transform = `scaleX(${range(t, 12.6, 13.3, easeOut)})`;
+  $('tag').style.opacity = range(t, 12.9, 13.5);
+  $('gsweep').style.transform = `translateX(${lerp(-100, 100, range(t, 12.8, 14.0, easeInOut))}%)`;
+  P.update(t, range(t, 8.6, 9.4));
+  $('black').style.opacity = range(t, 14.0, 15.0);
+};
+seek(0);
+</script>
+</body>
+</html>
