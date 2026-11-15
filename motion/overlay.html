@@ -136,6 +136,13 @@ const hook = E('hook'), W = E('word');
 const behinds = EV('behind'), notifs = EV('notif'), flows = EV('flow'), checks = EV('check');
 
 // ===================== BINA DOM =====================
+// USP buku (daripada poster rasmi) — bergilir dalam baris 3 lower third
+  const LT_LINES = [
+    '📖 Dapatkan buku <b>NAK KAHWIN TAPI ..</b>',
+    '<b>✓</b> Persediaan <b>emosi</b>, kewangan &amp; pendidikan',
+    '<b>✓</b> Komunikasi &amp; <b>resolusi konflik</b> Islamik',
+    '<b>✓</b> Hak &amp; tanggungjawab <b>suami isteri</b>',
+    '<b>✓</b> <b>Checklist praperkahwinan</b> lengkap'];
 let R = {};
 if (LAYER === 'behind') {
   R.bw = behinds.map(e => add(`<div class="bword" style="font-size:${e.size}px">${e.word}</div>`));
@@ -166,7 +173,7 @@ if (LAYER === 'behind') {
       <div class="bk"><div class="b3" id="ltb"><div class="sp"></div><div class="fr"><i id="ltfs"></i></div></div></div>
       <div class="div"></div>
       <div class="tx"><div class="l1">PERKONGSIAN DARIPADA PENULIS</div><div class="l2">Waleed Amir &amp; Wardah Kasih</div>
-        <div class="l3"><div id="cta1">📖 Dapatkan buku <b>NAK KAHWIN TAPI ..</b></div><div id="cta2">Ilmu hari ini, <b>bahagia selamanya</b></div></div></div>
+        <div class="l3" id="ltl3">${LT_LINES.map(l => `<div>${l}</div>`).join('')}</div></div>
       <div class="act"><div class="shop">${TT}<span>TikTok Shop</span></div>
         <div class="btn" id="ltbtn">DAPATKAN<div class="rip" id="ltrip"></div></div></div>
     </div>
@@ -268,9 +275,14 @@ window.seek = (t) => {
   $('ltb').style.transform = `rotateY(${rotY}deg) rotateX(${3 + Math.sin(t * .9) * 2}deg)`;
   $('ltfs').style.transform = `translateX(${lerp(-90, 90, range(tl % 6, 0, 1.2, easeInOut))}%)`;
   $('ltsw').style.transform = `translateX(${lerp(-100, 100, range(tl % 6, .2, 1.6, easeInOut))}%)`;
-  const ph = tl % 10, c2 = range(ph, 5, 5.4) * (1 - range(ph, 9.6, 10));
-  $('cta1').style.opacity = 1 - c2; $('cta1').style.transform = `translateY(${-c2 * 28}px)`;
-  $('cta2').style.opacity = c2;     $('cta2').style.transform = `translateY(${(1 - c2) * 28}px)`;
+  // baris 3: gilir setiap 4s (CTA -> 4 USP), gelongsor ke atas
+  const SEG = 4, nL = LT_LINES.length, cur = Math.floor(tl / SEG) % nL, inS = tl % SEG;
+  [...$('ltl3').children].forEach((el, j) => {
+    const prev = (cur - 1 + nL) % nL;
+    if (j === cur)        { const k = tl < SEG ? 1 : range(inS, 0, .4, easeOut); el.style.opacity = k; el.style.transform = `translateY(${(1 - k) * 28}px)`; }
+    else if (j === prev && tl >= SEG) { const k = range(inS, 0, .4, easeOut); el.style.opacity = 1 - k; el.style.transform = `translateY(${-k * 28}px)`; }
+    else { el.style.opacity = 0; }
+  });
   // animasi KLIK: tangan masuk -> tekan butang -> riak -> keluar (setiap 8s, bermula 2s selepas muncul)
   const kc = (tl - 2) % 8, kOn = tl > 2;
   const hin = kOn ? range(kc, 0, .6, easeOut) * (1 - range(kc, 1.9, 2.4, easeInOut)) : 0;

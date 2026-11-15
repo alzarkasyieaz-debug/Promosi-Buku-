@@ -3,7 +3,7 @@
 
 **Rakaman sumber:** `NKT.mov` (Google Drive, 95.3 s, 1080×1920 HEVC 30fps, rakaman potret dalam kereta)
 **Aset buku:** 8 imej dalam folder *Maklumat Buku* (cover, foto buku fizikal, product sheet, isi kandungan, halaman contoh)
-**Output akhir:** `render/NKT-01-final.mp4` (9:16, 1080×1920, ±105.4 s, dibuka dengan cover) + `cover/cover-video-01.png` (1080×1920)
+**Output akhir:** `render/NKT-01-final.mp4` (9:16, 1080×1920, ±109.5 s, dibuka dengan cover) + `cover/cover-video-01.png` (1080×1920)
 
 ---
 
@@ -96,10 +96,10 @@ natural skin tones, no extra text, no logo --ar 9:16
 | S4b | 49.2–57.1 | **NASIHAT TERAS** | "persediaan pengurusan emosi yang baik sebelum… alam perkahwinan" | Wide | **Floating 3D typography:** PENGURUSAN EMOSI (ekstrusi emas, rotateX/Y perlahan) |
 | S4c | 60.3–73.4 | **SEBAB → AKIBAT (positif)** | "bila kita mampu uruskan emosi… keputusan dan tindakan dengan baik" | Punch-in 1.13× | Animated connection flow: Urus emosi dengan baik › Keputusan yang baik › **Tindakan yang baik** (emas) |
 | S5 | 73.8–89.7 | **EMOTIONAL CLIMAX** | "Tapi begitu juga sebaliknya… runtuhnya institusi kekeluargaan… Percayalah." | **Slow cinematic push-in 1.10→1.22×** di setiap segmen | Flow merah bata: Gagal mengawal emosi › Implikasi berpanjangan › **Runtuhnya institusi kekeluargaan** (gegaran retak); kemudian "**PERCAYALAH.**" skrin penuh |
-| S6 | 89.7–98.2 | **SOFT-SELL BOOK CTA** | *(tiada suara; muzik)* | Book reveal 3D: buku berputar −48°→−14°, light sweep emas, float | "Perkahwinan bukan sekadar menyatukan **dua hati.**" → "Dalami lagi perkongsian ini menerusi buku" → **NAK KAHWIN TAPI ..** → pill "Dapatkan naskhah anda sekarang · TikTok Shop · Nuktah Books" |
-| S7 | 98.2–104.7 | **SIGNATURE OUTRO** | — | Hitam charcoal, partikel emas | *Waleed Amir* & *Wardah Kasih* (handwriting wipe-reveal, Great Vibes), garis emas, "ILMU HARI INI, BAHAGIA SELAMANYA", gold light sweep, fade to black |
+| S6 | 89.7–102.3 | **SOFT-SELL BOOK CTA + USP** | *(tiada suara; muzik)* | Book reveal 3D: buku berputar −48°→−14°, light sweep emas, float; pada ±4.4 s buku bergerak ke kiri | "Perkahwinan bukan sekadar menyatukan **dua hati.**" → **4 USP berikon** (warna poster rasmi) muncul satu per satu: Persediaan emosi, kewangan & pendidikan · Komunikasi & resolusi konflik secara Islamik · Hak & tanggungjawab suami isteri · Checklist praperkahwinan lengkap & praktikal → "Dalami lagi perkongsian ini menerusi buku" → **NAK KAHWIN TAPI ..** → pill "Dapatkan naskhah anda sekarang · TikTok Shop · Nuktah Books" |
+| S7 | 102.3–108.9 | **SIGNATURE OUTRO** | — | Hitam charcoal, partikel emas | *Waleed Amir* & *Wardah Kasih* (handwriting wipe-reveal, Great Vibes), garis emas, "ILMU HARI INI, BAHAGIA SELAMANYA", gold light sweep, fade to black |
 
-**Jumlah:** ±105.4 s (cover 0.6 s + kandungan 104.7 s) (dalam julat 60–120 s). Rakaman asal 95.3 s dipadatkan kepada 89.7 s dengan memendekkan 12 jeda senyap kepada ~0.2 s.
+**Jumlah:** ±109.5 s (cover 0.6 s + kandungan 108.9 s) (dalam julat 60–120 s). Rakaman asal 95.3 s dipadatkan kepada 89.7 s dengan memendekkan 12 jeda senyap kepada ~0.2 s.
 
 ## 7. PELAN MOTION GRAPHICS
 
@@ -168,7 +168,7 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
 ## 11. BOOK CTA (S6)
 
 - Cover sebenar (diluruskan daripada foto buku fizikal: `assets/cover-buku-rata.jpg`) dalam reveal 3D dengan spine, tepi halaman, light sweep emas dan bayang lantai.
-- **Copy:** "Perkahwinan bukan sekadar menyatukan **dua hati.**" → "Dalami lagi perkongsian ini menerusi buku **NAK KAHWIN TAPI ..**" → **Dapatkan naskhah anda sekarang** · TikTok Shop · Nuktah Books
+- **Copy:** "Perkahwinan bukan sekadar menyatukan **dua hati.**" → **4 USP berikon** (warna poster rasmi) muncul satu per satu: Persediaan emosi, kewangan & pendidikan · Komunikasi & resolusi konflik secara Islamik · Hak & tanggungjawab suami isteri · Checklist praperkahwinan lengkap & praktikal → "Dalami lagi perkongsian ini menerusi buku **NAK KAHWIN TAPI ..**" → **Dapatkan naskhah anda sekarang** · TikTok Shop · Nuktah Books
 - **Caption post cadangan:**
   > Ujian dalam rumah tangga itu pasti. Yang menentukan sama ada kita bertahan atau runtuh ialah **cara kita mengurus emosi**. 🤍
   > Persediaan emosi dan seni pengurusan krisis dikupas dengan santai dan praktikal dalam buku *Nak Kahwin Tapi ..* oleh Waleed Amir & Wardah Kasih.
@@ -189,7 +189,7 @@ Semua elemen berada **di dalam satu kotak** (900×168 px pada x 40, y 1560, sudu
 | Lajur | Kandungan | Animasi |
 |---|---|---|
 | Kiri (96 px) | **Mockup buku 3D** (cover sebenar + spine) | Putar masuk, ayun lembut, gold light sweep setiap 6 s, "flip" perhatian setiap 12 s |
-| Tengah (fleksibel) | PERKONGSIAN DARIPADA PENULIS / **Waleed Amir & Wardah Kasih** / CTA bergilir | Baris 3 bertukar setiap 5 s: "📖 Dapatkan buku **NAK KAHWIN TAPI ..**" ↔ "Ilmu hari ini, **bahagia selamanya**" |
+| Tengah (fleksibel) | PERKONGSIAN DARIPADA PENULIS / **Waleed Amir & Wardah Kasih** / CTA + USP bergilir | Baris 3 bergelongsor setiap 4 s: "📖 Dapatkan buku **NAK KAHWIN TAPI ..**" → "✓ Persediaan **emosi**, kewangan & pendidikan" → "✓ Komunikasi & **resolusi konflik** Islamik" → "✓ Hak & tanggungjawab **suami isteri**" → "✓ **Checklist praperkahwinan** lengkap" |
 | Kanan (196 px) | **Ikon TikTok Shop** + label, butang emas **DAPATKAN** | **Animasi klik** setiap 8 s: jari masuk → tekan butang (butang mengecil + glow) → riak cahaya → jari keluar (diklip dalam kotak) |
 
 Lower third disembunyikan semasa hook, slam "PERCAYALAH." dan babak Book CTA, dan diganti seketika oleh pill ✓.
@@ -219,7 +219,7 @@ Lower third disembunyikan semasa hook, slam "PERCAYALAH." dan babak Book CTA, da
 
 | Fail | Keterangan |
 |---|---|
-| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC, 105.4 s (dibuka dengan cover 0.6 s), −14.3 LUFS, **tanpa muzik**. Dihantar terus dalam sesi dan tidak di-commit ke git (68 MB). Subtitle disahkan segerak dalam ±0.1 s dengan transkripsi semula. |
+| `render/NKT-01-final.mp4` | Video akhir 9:16 1080×1920 30fps H.264 + AAC, 109.5 s (dibuka dengan cover 0.6 s), −14.3 LUFS, **tanpa muzik**. Dihantar terus dalam sesi dan tidak di-commit ke git (68 MB). Subtitle disahkan segerak dalam ±0.1 s dengan transkripsi semula. |
 | `cover/cover-video-01.png` | Cover video 1080×1920 |
 | `cover/cover-video-01.html` | Sumber cover (boleh ubah teks dan render semula) |
 | `motion/overlay.html` + `overlay-data.js` | Subtitle + motion graphics (telus) |
