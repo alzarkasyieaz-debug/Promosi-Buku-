@@ -1461,7 +1461,8 @@ window.DATA = {
    "word": "TERIMA KASIH",
    "size": 170,
    "sub": "",
-   "word_at": 15.160099999999998
+   "word_at": 15.160099999999998,
+   "top": 250
   },
   {
    "kind": "check",
@@ -1507,7 +1508,8 @@ window.DATA = {
    "word": "MINTA TOLONG",
    "size": 170,
    "sub": "",
-   "word_at": 28.3401
+   "word_at": 28.3401,
+   "top": 250
   },
   {
    "kind": "flow",
@@ -1544,7 +1546,8 @@ window.DATA = {
    "word": "MAAF",
    "size": 290,
    "sub": "",
-   "word_at": 56.46
+   "word_at": 56.46,
+   "top": 250
   },
   {
    "kind": "check",

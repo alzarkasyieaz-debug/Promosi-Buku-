@@ -1355,7 +1355,8 @@ window.DATA = {
    "word": "BERJEMAAH",
    "size": 200,
    "sub": "",
-   "word_at": 16.979899999999997
+   "word_at": 16.979899999999997,
+   "top": 250
   },
   {
    "kind": "notif",
@@ -1388,7 +1389,8 @@ window.DATA = {
    "word": "LEMBUT",
    "size": 270,
    "sub": "",
-   "word_at": 31.960099999999997
+   "word_at": 31.960099999999997,
+   "top": 250
   },
   {
    "kind": "notif",
@@ -1427,7 +1429,8 @@ window.DATA = {
    "word": "DOAKAN",
    "size": 270,
    "sub": "",
-   "word_at": 50.8333
+   "word_at": 50.8333,
+   "top": 250
   },
   {
    "kind": "check",

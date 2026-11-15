@@ -6,6 +6,7 @@ SILENCES = [tuple(x) for x in json.load(open(_H / "silences.json"))]
 # Nama penonton yang bertanya TIDAK dimasukkan: badan ucapan bermula pada "bertanyakan tentang..."
 COLD_OPEN = (18.72, 21.78)        # "adalah ibu kita juga, adalah ayah kita juga"
 MAIN = (7.15, 120.35)             # hingga "insya-Allah" (tanpa ucapan penutup yang menyebut nama)
+BEHIND_TOP = 250
 CLIMAX_FROM = 87.7
 FIX = {"kabar": "khabar", "insyaAllah": "insya-Allah", "bersalah": "besar"}
 GOLD = {"mertua", "ibu", "ayah", "bapa", "kasih", "sayang", "sama", "keutamaan", "pandangan", "pendapat",

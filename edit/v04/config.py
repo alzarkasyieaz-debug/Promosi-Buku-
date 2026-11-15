@@ -6,6 +6,7 @@ SILENCES = [tuple(x) for x in json.load(open(_H / "silences.json"))]
 # Nama penonton TIDAK dimasukkan: mula pada "Antara ucapan terbaik...", tamat pada "insya-Allah".
 COLD_OPEN = (11.86, 15.62)        # "ada tiga perkara ataupun tiga ucapan yang sangat mahal"
 MAIN = (7.62, 98.72)
+BEHIND_TOP = 250
 CLIMAX_FROM = 75.0
 # Pembetulan Whisper (semak manual): "sumpah"->"sedap", "setiap kelas hati"->"dengan ikhlas hati"
 FIX = {"sumpah": "sedap", "kelas": "ikhlas", "setiap": "dengan", "insyaAllah": "insya-Allah"}

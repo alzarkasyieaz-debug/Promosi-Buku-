@@ -960,7 +960,8 @@ window.DATA = {
    "word": "HADIAH",
    "size": 270,
    "sub": "",
-   "word_at": 7.2932999999999995
+   "word_at": 7.2932999999999995,
+   "top": 250
   },
   {
    "kind": "notif",
@@ -1037,7 +1038,8 @@ window.DATA = {
    "word": "MEMPERINGATI",
    "size": 200,
    "sub": "",
-   "word_at": 32.0133
+   "word_at": 32.0133,
+   "top": 250
   },
   {
    "kind": "check",

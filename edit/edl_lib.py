@@ -116,6 +116,10 @@ def build(vid):
         return dict(kind=kind, start=round(to_out(a), 3), end=round(to_out(b), 3), **kw)
     events = [dict(kind="hook", start=0.0, end=round(edl[0]["src_out"] - edl[0]["src_in"], 3), lines=C.HOOK_LINES)]
     events += C.events(ev, to_out)
+    # Kedudukan menegak kata di belakang penceramah (penceramah lebih dekat kamera -> naikkan)
+    for e in events:
+        if e["kind"] == "behind" and "top" not in e and hasattr(C, "BEHIND_TOP"):
+            e["top"] = C.BEHIND_TOP
 
     data = dict(fps=FPS, speech_end=round(speech_end, 3), cta_len=19.2, captions=captions, events=events)
     (ROOT / "edit" / vid / "edl.json").write_text(json.dumps(dict(segments=edl, speech_end=speech_end), indent=1))

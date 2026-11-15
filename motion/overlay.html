@@ -210,7 +210,7 @@ window.seek = (t) => {
     behinds.forEach((e, i) => {
       const el = R.bw[i], k = range(t, e.word_at, e.word_at + .8, easeOut) * (1 - range(t, e.end - .4, e.end));
       el.style.opacity = k;
-      el.style.top = (e.size > 200 ? 390 : 425) + 'px';
+      el.style.top = (e.top ?? (e.size > 200 ? 390 : 425)) + 'px';
       el.style.transform = `translateY(${(1 - k) * 60}px) scale(${lerp(1.15, 1, k) + (t - e.word_at) * .004})`;
       el.style.letterSpacing = `${lerp(30, 2, range(t, e.word_at, e.word_at + .9, easeOut))}px`;
     });
@@ -235,6 +235,7 @@ window.seek = (t) => {
   // --- kicker & sub untuk kata di belakang subjek
   behinds.forEach((e, i) => {
     const k = io(t, e); shade = Math.max(shade, k * .55);
+    R.bk[i].style.top = (e.top != null ? Math.max(140, e.top - 70) : 215) + 'px';
     R.bk[i].style.opacity = k; R.bk[i].style.transform = `translateY(${(1 - range(t, e.start, e.start + .6, easeOut)) * 20}px)`;
     const s = range(t, e.word_at + .5, e.word_at + 1.1) * (1 - range(t, e.end - .4, e.end));
     R.bs[i].style.opacity = s; R.bs[i].style.top = '268px';

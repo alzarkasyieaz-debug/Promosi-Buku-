@@ -6,6 +6,7 @@ TRANSCRIPT = "edit/v06/transkrip.json"
 SILENCES = [tuple(x) for x in json.load(open(_H / "silences.json"))]
 COLD_OPEN = (52.50, 58.55)        # "Ada kekurangan? Baiki bersama. Ada kelebihan? Rasai bersama."
 MAIN = (1.50, 69.15)
+BEHIND_TOP = 250
 CLIMAX_FROM = 46.6
 FIX = {"insyaAllah": "insya-Allah", "InsyaAllah": "Insya-Allah"}
 # "Ta 'ala" -> "Taala"; "Ada -ada" (gagap) -> "Ada"; tanda soal -> noktah pada "bersama"

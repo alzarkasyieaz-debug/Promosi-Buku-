@@ -6,6 +6,7 @@ SILENCES = [tuple(x) for x in json.load(open(_H / "silences.json"))]
 # Nama penanya TIDAK dimasukkan: mula pada "bertanya bagaimana...", tamat pada "Dan insya-Allah."
 COLD_OPEN = (33.86, 39.40)        # "jangan menghukum, tetapi menasihati dengan cara yang paling lembut"
 MAIN = (5.50, 87.50)
+BEHIND_TOP = 250
 CLIMAX_FROM = 66.3
 FIX = {"insyaAllah": "insya-Allah"}
 # Pembetulan ikut masa (semak manual): "Ta 'ala" -> "Taala"; "dia uji sebut," -> "diuji, sebut,"

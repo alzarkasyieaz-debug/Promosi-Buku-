@@ -1629,7 +1629,8 @@ window.DATA = {
    "word": "SAMA",
    "size": 280,
    "sub": "",
-   "word_at": 22.543400000000002
+   "word_at": 22.543400000000002,
+   "top": 250
   },
   {
    "kind": "check",
@@ -1675,7 +1676,8 @@ window.DATA = {
    "word": "UTAMA",
    "size": 270,
    "sub": "",
-   "word_at": 69.0498
+   "word_at": 69.0498,
+   "top": 250
   },
   {
    "kind": "flow",
