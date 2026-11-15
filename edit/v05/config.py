@@ -19,7 +19,7 @@ def events(ev, T):
     return [
         ev("notif", 5.6, 12.9, tone="gold", app="MEMBALAS SOALAN PENONTON", items=[
             dict(label="SOALAN", t="Pasangan kurang jaga solat?", at=T(5.7), time="soalan", icon="💬")]),
-        ev("behind", 13.18, 19.9, kicker="CARA PERTAMA · AJAK SOLAT", word="BERJEMAAH", size=200, sub="", word_at=T(18.58)),
+        ev("behind", 13.18, 19.9, kicker="CARA PERTAMA · AJAK SOLAT", word="BERJEMAAH", size=200, sub="", word_at=T(15.66)),
         ev("notif", 20.1, 30.0, tone="gold", app="AJAK SOLAT BERSAMA", items=[
             dict(label="CARA · 01", t="Minta pasangan imamkan kita", at=T(22.32), time="jemaah", icon="1"),
             dict(label="CARA · 01", t="Ajak isteri solat bersama", at=T(26.18), time="jemaah", icon="1")]),

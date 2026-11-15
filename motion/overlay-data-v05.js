@@ -1355,7 +1355,7 @@ window.DATA = {
    "word": "BERJEMAAH",
    "size": 200,
    "sub": "",
-   "word_at": 16.979899999999997,
+   "word_at": 14.059899999999999,
    "top": 250
   },
   {
