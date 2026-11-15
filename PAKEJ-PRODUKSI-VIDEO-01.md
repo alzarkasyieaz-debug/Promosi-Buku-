@@ -175,6 +175,12 @@ Tiada statistik digunakan kerana video tidak menyebut sebarang angka, dan tiada 
   > 📖 Dapatkan di TikTok Shop Nuktah Books.
   > #NakKahwinTapi #NasihatPerkahwinan #RumahTangga #PersediaanKahwin #NuktahBooks #abetterme #resetlifestyle
 
+### Lower Third Promosi (sepanjang video, ±3.8 s → ±88.5 s)
+- **Mockup buku 3D bergerak:** cover sebenar dengan spine, berputar masuk, berayun lembut, gold light sweep setiap 6 s, dan "attention flip" setiap 12 s untuk menarik mata tanpa mengganggu.
+- **Teks:** PERKONGSIAN DARIPADA PENULIS · **Waleed Amir & Wardah Kasih**
+- **CTA bergilir setiap 5 s:** "📖 Dapatkan buku **NAK KAHWIN TAPI ..**" ↔ "🛒 Kini di **TikTok Shop · Nuktah Books**", dengan butang emas **DAPATKAN** yang berdenyut.
+- **Kedudukan:** y 1550–1720, x 40–900. Ia berada di bawah subtitle dan tidak menutup wajah. Disembunyikan semasa hook, slam "PERCAYALAH." dan babak Book CTA (S6), kerana babak itu sudah memaparkan buku.
+
 ## 12. SIGNATURE OUTRO (S7)
 
 *Waleed Amir* & *Wardah Kasih* ditulis menggunakan fon skrip **Great Vibes** dengan wipe kiri→kanan bertempo tulisan tangan (1.8 s setiap nama). Ini **bukan** tandatangan sebenar. Jika fail tandatangan asal dan izin diberikan, gantikan dengan SVG stroke-path supaya animasi "dilukis" menjadi lebih tepat. Ia diikuti garis emas, tagline buku "Ilmu hari ini, bahagia selamanya", gold light sweep, partikel atmosfera dan fade to black.
