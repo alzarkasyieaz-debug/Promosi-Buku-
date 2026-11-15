@@ -92,6 +92,13 @@
 </div>
 <script src="anim.js"></script>
 <script>
+// Petikan pembuka babak CTA, dipilih dengan ?v=v02 (lalai v01)
+const QUOTES = {
+  v01: ['Perkahwinan bukan sekadar', 'menyatukan <span class="g">dua hati.</span>'],
+  v02: ['Bahagia itu dicipta,', 'berlandaskan <span class="g">acuan Islam.</span>'],
+};
+const QV = QUOTES[new URLSearchParams(location.search).get('v') || 'v01'];
+$('q').innerHTML = `<span>${QV[0]}</span><br><span>${QV[1]}</span>`;
 const DURATION = 19.2;
 window.DURATION = DURATION;
 const P = makeParticles(document.getElementById('particles'), 40, 7);

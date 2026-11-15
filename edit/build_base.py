@@ -5,18 +5,21 @@
 - Color grade sinematik hangat (selaras palet buku)
 - Audio: high-pass, denoise ringan, loudnorm -14 LUFS (standard media sosial)
 
-Guna: python3 edit/build_base.py <NKT.mov> <out.mp4>
+Guna: python3 edit/build_base.py <sumber.mov> <out.mp4> [edl.json] [face_x] [face_y]
+      (lalai: edit/edl.json, face_x=0.5, face_y=0.34 — video 01)
 """
 import json, subprocess, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 src, out = sys.argv[1], sys.argv[2]
-segs = json.load(open(ROOT / "edit/edl.json"))["segments"]
+edl_path = sys.argv[3] if len(sys.argv) > 3 else ROOT / "edit/edl.json"
+segs = json.load(open(edl_path))["segments"]
 
 GRADE = ("eq=contrast=1.07:saturation=0.88:gamma=0.97,"
          "colorbalance=rs=0.02:bs=-0.04:rm=0.04:gm=0.01:bm=-0.04:rh=0.03:bh=-0.03,"
          "vignette=PI/5")
-FACE_Y = 0.34  # titik tumpu zoom menegak (0=atas, 1=bawah) — wajah penceramah
+FACE_X = float(sys.argv[4]) if len(sys.argv) > 4 else 0.5   # titik tumpu mendatar (0=kiri)
+FACE_Y = float(sys.argv[5]) if len(sys.argv) > 5 else 0.34  # titik tumpu zoom menegak (0=atas, 1=bawah) — wajah penceramah
 
 import tempfile, os
 tmp = pathlib.Path(tempfile.mkdtemp(prefix="nkt_"))
@@ -26,7 +29,7 @@ for i, s in enumerate(segs):
     z0, z1 = s["zoom"]
     z = f"({z0}+({z1}-{z0})*t/{d:.3f})"
     vf = (f"scale=w='trunc(1080*{z}/2)*2':h='trunc(1920*{z}/2)*2':eval=frame,"
-          f"crop=1080:1920:'(iw-1080)/2':'(ih-1920)*{FACE_Y}',setsar=1,fps=30,{GRADE},format=yuv420p")
+          f"crop=1080:1920:'(iw-1080)*{FACE_X}':'(ih-1920)*{FACE_Y}',setsar=1,fps=30,{GRADE},format=yuv420p")
     n = round(d * 30)
     af = f"afade=t=in:d=0.015,afade=t=out:st={n/30-0.015:.4f}:d=0.015,apad,atrim=0:{n/30:.4f}"
     seg = tmp / f"s{i:02d}.mkv"

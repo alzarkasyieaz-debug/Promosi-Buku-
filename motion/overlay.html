@@ -122,7 +122,8 @@
 <body>
 <div class="stage" id="stage"></div>
 <script src="anim.js"></script>
-<script src="overlay-data.js"></script>
+<script>/* ?data=overlay-data-v02.js memilih data video; lalai video 01 */
+document.write('<script src="' + (new URLSearchParams(location.search).get('data') || 'overlay-data.js') + '"><\/script>');</script>
 <script>
 const D = window.DATA;
 const LAYER = new URLSearchParams(location.search).get('layer') || 'front';
